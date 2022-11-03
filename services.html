@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Carrer path</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 100%;
+  padding: 0 1em 1em 1em;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2em 1.5em;
+  background: linear-gradient(#ffffff 50%, #0a0b0b 50%);
+  background-size: 100% 200%;
+  background-position: 0 2.5%;
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: 0.5s;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f194c;
+  margin: 1em 0;
+}
+p {
+  color: #575a7b;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper {
+  background-color: #343639;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #8d9298;
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+
+
+  </style>
+
+
+
+  <body>
+    <section>
+      <div class="row">
+        <h2 class="section-heading">Our Services</h2>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-magnifying-glass-dollar"></i>
+            </div>
+            <h3>Executive Search</h3>
+            <p>
+                Exclusive and retained, our Executive Search practice is focused on Board and CXO level leadership hiring
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-align-center"></i>
+            </div>
+            <h3>Senior & Middle Level Hiring </h3>
+            <p>
+                We help Multinational & Indian clients across 24 industry segments recruit mid – senior level talent across functions.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+             <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Service Global Sourcing</h3>
+            <p>
+                Addresses global talent needs of companies looking at employing Indian or expatriate talent for their overseas operations
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Career Transition Services</h3>
+            <p>
+                Comprehensive outplacement services based on unique needs of clients
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-people-group"></i>
+            </div>
+            <h3>Market Intelligence</h3>
+            <p>
+                We enable organisations to take informed talent decisions. Offerings include Talent Mapping, Compensation Surveys & Independent Reference Checks
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h3>Recruiter Training Programmes</h3>
+            <p>
+                Our recruitment leaders leverage years of experience and knowledge to train corporate Talent Acquisition teams on the art and science of recruitment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
